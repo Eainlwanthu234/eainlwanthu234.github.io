@@ -10,7 +10,7 @@
 
     <h3> HTML Table </Table></h3> 
 
-    <table border="1" cellpadding="10" cellspacing="10">  
+    <table border="1" cellpadding="10" >  
         <tr>
             <td> 1 </td>
             <td> 2 </td>
@@ -18,13 +18,18 @@
         </tr>
         <tr>
             <td colspan="3">
-                <td> 4 </td>
-                 <td> 5 </td>
-                <td> 6 </td>
+                <table border="1" cellpadding="10">
+                    <tr>
+                        <td> 4 </td>
+                        <td> 5 </td>
+                        <td> 6 </td>
+                    </tr>
+                </table>
+            
             </td>
         </tr>
     
-
+    </table>
         
     
     <h3>Student List</h3>
@@ -96,12 +101,12 @@
     <tfoot>
         <tr>
             <td colspan="4">total</td>
-        <td rowspan="2">22800</td>
+            <td rowspan="2">22800</td>
         </tr>
        
         
         <tr>
-            <td colspan="4">Grantotal</td>
+            <td colspan="4">Grandtotal</td>
         
         </tr>
         
@@ -112,7 +117,16 @@
 <table border="1"cellpadding="10">
     <tr style="background-color: darkcyan;">
         <td>1</td>
-        <td ></td>
+        <td colspan="2">2</td>
+    </tr>
+    <tr style="background-color: cadetblue;">
+        <td>3</td>
+        <td rowspan="2">4</td>
+        <td>5</td>
+    </tr>
+    <tr style="background-color: darkorchid;">
+        <td>5</td>
+        <td>6</td>
     </tr>
 
 </table>
