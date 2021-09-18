@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Calulator </title>
+</head>
+<body>
+    <h3>JS Calulator </h3>
+    <label for="firstNumber">First Number</label>
+    <input type="number" name="firstNumber" id="firstNumber"><br>
+    <label for="secondNumber">Second Number</label>
+    <input type="number" name="secondNumber" id="secondNumber"><br>
+    <label for="thirthNumber" >ThirthNumber</label>
+    <input type="thirthNumber"name="thirthNumber " id="thirthNumber"><br>
+    <button onclick="calculate()">Calculate</button> <br>
+    <label id="result"></label>
+
+    <script>
+
+        function calculate(){
+        let firstNumber = parseInt( document.querySelector("#firstNumber").value );
+        let secondNumber = parseInt( document.querySelector("#secondNumber").value );
+        let thirthNumber = parseInt( document.querySelector("#thirthNumber").value);
+        console.log(firstNumber,secondNumber,thirthNumber)
+        let sum = firstNumber + secondNumber + thirthNumber;
+        ;
+        let result=` sum : ${sum}<br> ` 
+        console.log(result);
+
+      document.querySelector("#result").innerHTML=result;  
+    
+
+        }
+        
+
+        
+
+    </script>
+</body>
+</html>

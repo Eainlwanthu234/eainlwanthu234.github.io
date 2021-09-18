@@ -4,9 +4,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exam</title>
+    <title>Document</title>
 </head>
 <body>
-    <h3> Jsexamresult </h3>
+     
+     <table  border="1" bgcolor="lightyellow">
+         
+             <tr>
+                 <th align="center" colspan="2">Exam Result</th>
+             </tr>
+             <tr>
+                 <td>
+                    <label for="html">HTML</label>
+                 </td>
+                <td>
+                    <input type="number" name="html" id="html">
+                </td>
+                
+             </tr>
+             <tr>
+                <td>
+                    <label for="css">CSS</label>
+                     
+                </td>
+                <td>
+                    <input type="number" name="css" id="css">
+                </td>
+             </tr>
+             
+             <tr>
+                 <td><label for="js">JavaScript</label></td>
+                 <td><input type="number" name="js" id="js"></td>
+             </tr>
+                   
+                    
+            
+            <tr>
+                 <td  colspan="2" align="center">
+                     <button onclick="calculate()">Total</button><br>
+                    <label id="total"></label><br>
+                    <label id="result">Result</label>
+                </td>
+               
+            </tr>
+                     
+             
+         
+      
+    </table>
+
+            <script>
+                 function calculate()
+                 {
+                  let html=parseInt(document.querySelector("#html").value);
+                   console.log(html);
+                    let css=parseInt(document.querySelector("#css").value);
+                    console.log(css);
+                    let js=parseInt(document.querySelector("#js").value);
+                    console.log(js);
+
+                    let max=100;
+                    let min=0;
+                 if ((html>=min && html<=max) && (js>=min && js<=max) && (css>=min && css<=max)){   
+
+                       console.log(html,css,js);
+                        let sum=html+css+js;
+                        let result=` Total result: ${sum}`;
+                        console.log(result);
+                        document.querySelector('#total').innerHTML=result;
+                    
+                    
+                
+                        let examResult='';
+                 if(html>=40 && js>=40 && css>=40){
+                     examResult='Pass!';
+                     if (html>=80 || js>=80 || css>=80){
+                         examResult='Pass with Distinction';
+                     }
+                    } else{
+                        examResult='Fail';
+                    }    
+                    document.querySelector('#result').innerHTML=examResult;
+
+                 }else{
+                     alert('Please enter marks value in to 0 to 100!');
+                 }
+
+                 }
+            </script>
+
+    
 </body>
+
+
 </html>
