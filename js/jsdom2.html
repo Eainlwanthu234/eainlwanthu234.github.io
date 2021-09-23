@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM 2</title>
+</head>
+<body>
+    <h3> JS DOM 2 </h3>
+    <img src="2.png" alt="" width="150px" height="150px" id="myimg"
+        onmouseenter="big()" onmouseout="normal()" 
+    >
+    <script>
+
+        let myimg= document.querySelector('#myimg')
+        myimg.onmouseenter = big
+        myimg.onmouseout = normal;
+
+
+        function big(){
+            let myimg= document.querySelector('#myimg')
+            myimg.style.width="300px";
+            myimg.style.height="300px"
+        }
+        function normal(){
+            let myimg= document.querySelector('#myimg')
+            myimg.style.width="150px";
+            myimg.style.height="150px"
+            change();
+        }
+
+        function change(){
+            let myimg=document.querySelector('#myimg')
+            //console.log(myimg.src);
+            let mysrc=myimg.getAttribute('src')
+           // myimg.src='3.jpeg';
+           console.log(mysrc);
+           if(mysrc=='2.png'){
+               myimg.src='3.jpeg'
+           }else if(mysrc=='3.jpeg'){
+               myimg.src='4.png'
+           }else{
+               myimg.src='2.png'
+           }
+        }
+
+    </script>
+</body>
+</html>
