@@ -1,0 +1,10 @@
+span{
+    /*color: aquamarine;*/
+    color: bgr(30,50,40);
+    line-height: 10px;
+    letter-spacing: 5px;
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+}

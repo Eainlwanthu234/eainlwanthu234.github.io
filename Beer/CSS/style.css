@@ -1,0 +1,102 @@
+/* Pexels.com*/
+
+@font-face{
+    /*src: url(../Slabo_27px/Slabo27px-Regular.ttf);
+    font-family: slabo;*/
+    src: url(../CSS/great-vibes/GreatVibes-Regular.ttf);
+    font-family: great;
+
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.logo{
+    width: 110px;
+    height: 70px;
+    display: block;
+    margin-left: 30px;
+}
+.nav_background{
+    background-color: black;
+}
+.nav_brand{
+    display: inline-block;
+}
+.nav_background ul{
+    float: right;
+}
+.nav_background ul li{
+    display: inline-block;
+    color: wheat;
+    text-transform: uppercase;
+    margin-right: 40px;
+    padding-top:  30px;
+}
+.brand_name{
+    margin-left: 60px;
+    color: wheat;
+    /*font-family: slabo;*/
+    font-family: great;
+}
+.nav_background ul li:hover{
+    color: yellow;
+    transform: translate(4px , -5px);
+    transition-duration: 2.5s;
+}
+
+.background{
+    background-image: url(../images/b2.jpg);
+    height: 650px;
+    /*margin-top: -100px;*/
+}
+.beerbar{
+    position: absolute;
+    top: 300px;
+    left: 350px;
+    color: wheat;
+    font-family: great;
+    font-size: 40px;
+}
+.shop{
+    border: 1px solid wheat;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: black;
+    color: wheat;
+    margin-left: 100px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+div.grid div{
+    border: 4px solid rgb(19, 4, 34);
+    text-align: center;
+    background-color: black;
+    color: wheat;
+    padding: 30px 30px 30px 40px;
+}
+div.grid div.grid_one {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    text-align: left;
+    padding: 70px 50px 50px 90px;
+}
+
+.perfact{
+    color: wheat;
+}
+.readmore{
+    background-color: wheat;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-top: 15px;
+}
+.para{
+    margin-top: 10px;
+}
